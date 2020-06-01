@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Proyecto: Blog</title>
+    <!-- letra de titulo de google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        width: 1000px;
+        margin: 20px auto;
+        padding: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 18px;
+
+        /* fondo de pantalla  */
+
+        background-color: rgba(252, 251, 199, 0.904);
+        background-color: rgba(252, 251, 199, 0.904);
+        background-image:
+        linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+        linear-gradient(#eee .1em, transparent .1em);
+        background-size: 100% 1.2em;
+       
+      }
+      header {
+        text-align: center;
+      }
+      header h1 {
+        font-family: 'Dancing Script', cursive;
+        font-size: 4em;
+        font-weight: 700;
+        text-shadow: 0px 3px 3px #ccc;
+      }
+   
+              
+      .contenido .titulo_lista {
+        font-size: 1.5em;
+      }
+
+      .contenido ul li {
+        list-style-type: square ;
+        
+      }
+      .contenido ul li a{
+       text-decoration: none;
+      }
+
+      .contenido ul li a:hover{
+      color:coral;
+      cursor: pointer;
+      }
+
+      .articulo p {
+        text-align: justify;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin-bottom: 150px;
+        line-height : 30px;
+      }
+      
+      .articulo  h2{
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: bolder;
+        text-shadow: 0px 3px 3px coral;
+      }
+
+      .articulo  h4{
+        font-weight: lighter;
+        font-size: 1em;
+        color: #000;
+        text-shadow: 0px 3px 3px rgb(209, 104, 66);
+              }
+
+      img {
+        padding: 10px;
+        padding: 10px;
+        float: left;
+      }
+
+
+      footer h3{
+        font-family: 'Dancing Script', cursive;
+        font-size: 2em;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <content>
+      <header>
+        <h1>El Blog de Andrea Lucia</h1>
+      </header>
+
+      <main class="contenido">
+        <h3 class="titulo_lista">Contenido</h3>
+        <ul class="lista">
+          <li><a href="#primero">Introduccion a HTML</a></li>
+          <li><a href="#segundo">Aprendiendo sobre Etiquetas en HTML</a></li>
+          <li><a href="#tercero">Aprendiendo a insertar Imagenes</a></li>
+          <li><a href="#cuarto">Introduccion a CSS</a></li>
+          <li><a href="#quinto">Propiedades de CSS</a></li>
+        </ul>
+
+        <article class="articulo">
+          <div>
+            <h2 id="primero">Introducción a HTML</h2>
+            <h4>Aprendiendo a crear Páginas Web</h4>
+            <hr />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/230px-HTML5_logo_and_wordmark.svg.png" alt="Aprendiendo HTML">
+            <p>
+              HTML es un lenguaje muy sencillo compuesto de elementos, que
+              pueden ser aplicados a piezas de texto para darles un significado
+              diferente en un documento; <strong>html</strong> indica el
+              comienzo y el final de un documento HTML,<strong> head</strong>
+              delimita la parte de la cabecera del documento,<strong>
+                title</strong> que se utiliza para indicar el título del documento y que los
+              navegadores lo visualizan en la parte superior izquierda de la
+              ventana del navegador,<strong> body</strong> delimita el cuerpo
+              del documento HTML.
+            </p>
+          </div>
+        
+          <div>
+            <h2 id="segundo">Aprendiendo sobre Etiquetas en HTML</h2>
+            <h4>Las etiquetas y su importancia</h4>
+            <hr />
+            <img src="https://websgalicia.es/blog/wp-content/uploads/etiquetas-html-800x560.jpg" alt="Etiquetas HTML" width="300px">
+            <p>
+              <strong><em>¿Qué es una etiqueta?</em></strong> En otras palabras, el texto en una
+              página web está <em>«marcado»</em> con estos códigos para dar instrucciones
+              al navegador web sobre cómo mostrar el texto. Estas etiquetas de
+              marcado son las propias etiquetas HTML.
+              <strong><em>¿Cuál es la importancia de una etiqueta?</em></strong> Las etiquetas
+              tienen gran importancia en un documento HTML ya que brindan
+              información especial que es utilizada para determinar la
+              representación final del documento
+            </p>
+          </div>
+        
+          <div>
+            <h2 id="tercero">Aprendiendo a insertar Imágenes</h2>
+            <h4>Las imágenes dentro de HTML</h4>
+            <hr />
+            <img src="https://desarrolladoresweb.org/wp-content/uploads/como-insertar-imagenes-en-html.jpg" alt="Insertar Imagen" width="300px"> 
+            <p>
+              Para poner una imagen simple en una página web, utilizamos el
+              elemento <strong><code>«img»</code></strong> Se trata de un
+              elemento vacío <em>(lo que significa que no contiene texto o etiqueta
+              de cierre)</em> que requiere de por lo menos de un atributo para ser
+              utilizado: src <strong><em>(a veces denominado por su nombre completo,
+              source)</em></strong>. El atributo src contiene una ruta que apunta a la imagen
+              que quieres poner en la página, que puede ser una URL relativa o
+              absoluta, de la misma forma que el elemento
+              <strong><code>«a»</code></strong> contiene los valores del
+              atributo href.
+            </p>
+          </div>
+        
+          <div>
+            <h2 id="cuarto">Introduccion a CSS</h2>
+            <h4>¿qué es CSS?</h4>
+            <hr />
+            <img src="https://disenowebakus.net/imagenes/articulos/aprender-css-hojas-de-estilo-en-cascada.jpg" alt="Introduccion CSS" width="300px">
+            <p>
+              CSS es un <u>lenguaje de hojas de estilos</u> creado para controlar el
+              aspecto o presentación de los documentos electrónicos definidos
+              con <em>HTML y XHTML</em>. CSS es la mejor forma de separar los contenidos
+              y su presentación y es imprescindible para crear páginas web
+              complejas. Una vez creados los contenidos, se utiliza el lenguaje
+              CSS para definir el aspecto de cada elemento: color, tamaño y tipo
+              de letra del texto, separación horizontal y vertical entre
+              elementos, posición de cada elemento dentro de la página, etc.
+            </p>
+          </div>
+       
+          <div>
+            <h2 id="quinto">Propiedades de CSS</h2>
+            <h4>¿Qué propiedades de CSS existen?</h4>
+            <hr />
+            <img src="https://4.bp.blogspot.com/-x0ez6-DFmXM/WKnQU7xNHcI/AAAAAAAADfE/ITXQn1eTTeICzIhhZtrV5Yf2n06kAW5kQCLcB/s1600/propiedades-css-hojas-de-estilo.jpg" alt="Propiedades CSS" width="300px">
+            <p>
+              Algunas propiedades de CSS son <strong>Font-family</strong> (Define la familia
+              tipográfica),<strong>Font-size</strong>:(Define el tamaño de la fuente y el valor
+              se puede escribir en pixels o en ems.) <strong>Color</strong> (Define el color de
+              la tipografía.) <strong>Width</strong> define el ancho de un elemento) <strong>Height</strong>
+              (Define el alto de un elemento) <strong>Padding</strong> (Es la distancia desde el
+              borde de un elemento hasta su contenido.) <strong>Margin</strong> (Es la distancia
+              entre un elemento y otro, desde el borde de un elemento hacia
+              afuera) <strong>Border</strong>: (Define el borde de un elemento, su color, su
+              estilo y grosor.) <strong>Background</strong> (Define los fondos de un objeto. El
+              fondo puede ser una imagen o un color.)
+            </p>
+          </div>
+        </article>
+      </main>
+    </content>
+    <footer>
+      <hr>
+      <h3>
+        Andrea Alonzo.  &copy; 2020
+      </h3>
+    </footer>
+  </body>
+</html>
